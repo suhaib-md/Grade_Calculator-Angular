@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+</head>
+<body ng-app="marks">
+    <div ng-app="marks" ng-controller="ss">
+        <form >
+            <label for="m1">sub1:</label>
+            <input ng-model="m1" type="number"><br>
+            <label for="m2">sub2:</label>
+            <input ng-model="m2" type="number"><br>
+            <label for="m3">sub3:</label>
+            <input ng-model="m3" type="number"><br>
+            <label for="m4">sub4:</label>
+            <input ng-model="m4" type="number"><br>
+            <label for="m5">sub5:</label>
+            <input ng-model="m5" type="number"><br>
+            <button ng-click="calc()">calculate grade</button>
+        </form>
+        <h1>GRADE </h1><h1>{{ real}}</h1>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
